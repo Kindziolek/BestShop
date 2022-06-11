@@ -1,0 +1,29 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-one: #08A6E4;
+    --primary-color-two: #FB3B64;
+    --primary-color-three:#55DFB4;
+    --size-width-header-footer: 1352px;
+    --size-statistics-number: 20px;
+    --size-headliner-text: 36px;
+    --size-content-text: 16px;
+    --size-packet-header: 20px;
+    --size-packet-header-center: 21px;
+}
+
+.container_header {
+    width: 100vw;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.top_nav {
+    display: flex;
+    width: var(--size-width-header-footer);
+    height: 70px;
+
+}
