@@ -237,6 +237,7 @@
     margin-top: 5px;
 }
 
+
 .statistics_number {
     text-align: center;
     font-weight: 800;
@@ -267,30 +268,159 @@
 }
 
 .benefits_box {
+    width: 1124px;
+    height: 370px;
+    background-color: #FFFFFF;
     display: flex;
-    max-width: 80%;
-    background-color: rgb(255, 255, 255);
     border: 1px solid #E8E9ED;
     border-radius: 5px;
+    margin-top: 37px;
+}
+
+.benefits_box_small {
+    width: 623px;
+    height: 370px;
+    background-color: #FFFFFF;
+    display: flex;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    margin-top: 37px;
+}
+
+.benefits_box:last-of-type {
+    display: flex;
+    width: 440px;
+    height: 370px;
+    background-color: #55DFB4;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits_box_duo {
+    display: flex;
+    justify-content: space-between;
+    width: 1124px;
 }
 
 .benefits_content {
     display: flex;
-    pa
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+.benefit_first_photo {
+    width: 180px;
+    height: 180px;
+    transform: rotate(45deg);
+    background: #FB3B64;
+    border-radius: 41px;
+    position: relative;
+    right: 110px;
+    top: 51px;
+
+    
+}
+
+.benefit_first_photo::after {
+    display: block;
+    position: absolute;
+    background-image: url("/BestShop/assets/Macbook.png");
+    width: 386px;
+    height: 219px;
+    content: "";
+    transform: rotate(315deg);
+    background-size: cover;
+    top: 110px;
+    left: -144px;
+
+}
+
+.benefit_second_photo {
+    width: 320px;
+    height: 320px;
+    background-color: #07ACE6;
+    border-radius: 50%;
+    position: relative;
+    left: 70px;
+    top: 10px;
+}
+
+.benefit_second_photo::after {
+    display: block;
+    position: absolute;
+    background-image: url("/BestShop/assets/iPhone.png");
+    width: 426px;
+    height: 328px;
+    content: "";
+    background-size: cover;
+    left: 3px;
+    top: 15px;
+}
+
+.benefit_third_photo {
+    position: relative;
+    background-color:  #55DFB4;
+    width: 440px;
+    height: 370px;
+    margin-top: 38px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.benefit_third_photo::after {
+    display: block;
+    position: absolute;
+    background-image: url("/BestShop/assets/Trumpet.png");
+    width: 296px;
+    height: 208px;
+    background-size: cover;
+    content: "";
+    top: 98px;
+    left: 62px;
 }
 
 .benefit_firts {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 1124px;
+    justify-content: space-between;
 }
+
+.benefit_second {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1124px;
+    justify-content: space-between;
+}
+
 
 .headline_benefits {
     text-align: left;
-    font-size: 36px;
-    line-height: 42px;
     font-family: Raleway;
     letter-spacing: 0px;
     color: #000000;
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.headline_size_benefit_one {
+    width: 237px;
+    height: 42px;
+
+}
+
+.headline_size_benefit_second {
+    width: 246px;
+    height: 84px;
+}
+
+.headline_size_benefit_third {
+    width: 348px;
+    height: 84px;
 }
 
 .text_benefits {
@@ -303,5 +433,25 @@
     color: #000000;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 416px;
+    height: 66px;
+}
 
+.benefit_line {
+    display: block;
+    width: 328px;
+    height: 0px;
+    border: 2px solid; 
+    border-color: #FB3B64;
+}
+
+.second_line {
+    border-color: #08A6E4;
+}
+
+.third_line {
+    border-color: #55DFB4;
 }
