@@ -462,6 +462,14 @@
     width: 100%;
 }
 
+.pricing_ofer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-top: 100px;
+}
+
 .headline_pricing {
     text-align: center;
     font-size: 36px;
@@ -470,39 +478,128 @@
     letter-spacing: 0px;
     color: #000000;
     height: 42px;
-    margin-top: 100px;
 }
 
 .pricing_container {
-    width: 100vw;
+    width: 100%;
+    max-width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 50px;
 }
 
 .pricing_box {
-    display: block;
-}
-
-.price_pakiet {
     background-color: #FFFFFF;
     border: 1px solid;
     border-radius: 18px;
     width: 372px;
     height: 461px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.pakiet_basic {
+.pricing_basic {
     border-color: #FB3B64;
+    color: #FB3B64;
 }
 
-.pakiet_professional {
+
+.pricing_professional {
     border-color: #07ACE6;
     box-shadow: 5px 10px 27px #07ACE629;
     width: 405px;
     height: 500px;
+    color: #07ACE6;
 }
 
-.pakiet_premium {
+.pricing_premium {
     border-color: #55DFB4;
+    color: #55DFB4;
+} 
+
+.headline_pricing_box {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1px;
+    font-family: Raleway;
+    letter-spacing: 0px;
+    color: #13253B;
+    margin-top: 25px;
+}
+
+.price_pakiet {
+    text-align: left;
+    font-weight: 300;
+    font-size: 46px;
+    font-family: "Open Sans";
+    letter-spacing: 0px;
+    margin-top: 20px;
+}
+
+.pakiet_basic {
+    margin-bottom: 10px;
+}
+
+.limited_info {
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1px;
+    font-family: Raleway;
+    letter-spacing: 0px;
+    color: #13253B;
+}
+
+.pricing_list {
+    margin-top: 50px;
+}
+
+.pricing_element {
+    text-align: center;
+    font-size: 14px;
+    line-height: 41px;
+    font-family: "Open Sans";
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.pricing_yes::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+  }
+
+.pricing_not::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Close.svg");
+  }
+
+
+
+.btn {
+    position: relative;
+    bottom: -45px;
+    width: 150px;
+    height: 50px;
+    background-color: #EB476E;
+    border-radius: 23px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 50px;
+    font-family: "Open Sans";   
+    letter-spacing: 0px;
+    color: #FFFFFF;
 }
