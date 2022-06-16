@@ -603,3 +603,15 @@
     letter-spacing: 0px;
     color: #FFFFFF;
 }
+
+.btn_basic {
+    background-color: #EB476E;
+}
+
+.btn_professional {
+    background-color: #07ACE6;
+}
+
+.btn_premium {
+    background-color: #55DFB4;
+}
