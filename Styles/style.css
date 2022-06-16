@@ -15,7 +15,7 @@
     --size-packet-header-center: 21px;
 }
 
-.header {
+.header, .footer {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
@@ -785,3 +785,35 @@
     align-self: flex-end;
 }
 
+.footer {
+    box-shadow: 0px -5px 40px #00000029;
+    margin-top: 59px;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_icon {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+}
+
+.twitter_icon {
+    background-image: url(/BestShop/assets/Twitter.svg);
+    margin-right: 20px;
+}
+
+.facebook_icon {
+    background-image: url(/BestShop/assets/Facebook.svg);
+}
+
+.footer_text {
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: "Open Sans";
+    letter-spacing: 0px;
+    color: #A5A5A5;
+}
