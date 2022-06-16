@@ -60,7 +60,7 @@
     text-decoration: none;
     height: 66px;
     align-items: center;
-    border-bottom-color: #FFFFFF ;
+    border-bottom-color: #FFFFFF;
     border-bottom-style: solid;
     border-bottom-width: 4px;
 }
@@ -612,5 +612,176 @@
 
 .btn_premium {
     background-color: #55DFB4;
+}
+
+.section_contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 155px;
+    background-color: #FFFFFF;
+    width: 100vw;
+}
+
+
+.contant_container {
+    display: flex;
+    width: 100vw;
+    max-width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline_questions {
+    text-align: left;
+    font-size: 49px;
+    line-height: 57px;
+    font-family: Raleway;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.questions_text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Open Sans";
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+.contant_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.email_icon::before {
+    content: "";
+    background-image: url(/BestShop/assets/Mail\ Icon.svg);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.phone_icon::before {
+    content: "";
+    background-image: url(/BestShop/assets/Phone\ Icon.svg);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact_form_box {
+    width: 440px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact_detalis {
+    display: inline-flex;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Open Sans";
+    letter-spacing: 0px;
+    color: #A5A5A5;
+    align-items: center;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_contact {  
+    border: none;
+    border-bottom: 1px solid #95989A;
+    width: 440px;
+
+}
+
+.form_text {
+    text-align: left;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: "Open Sans";
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+
+   
+}
+
+.checkbox_icon {
+    display: flex;
+    background-position: center;
+    background-size: 50%;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    height: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    
+}
+
+.checkbox_form {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.checkbox_form:checked + .checkbox_icon {
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.checkbox_text {
+    text-align: left;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: "Open Sans";
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.checkbox_box {
+    display: flex;
+    position: relative;
+}
+
+.btn_form {
+    background: #08A6E4;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    border: 0;
+    width: 226px;
+    height: 57px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "Open Sans";
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    align-self: flex-end;
 }
 
