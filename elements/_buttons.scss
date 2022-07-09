@@ -1,0 +1,23 @@
+.button_wellcome {
+    background-origin: padding-box;
+    background-clip: padding-box;
+    background-color: $color-primary-shadow;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: $button-radius;
+    width: 440px;
+    height: 67px;
+    border: none;
+    margin-top: 18px;
+    position: relative;
+}
+
+.button_wellcome_text {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $font-open-sans;
+    letter-spacing: 0px;
+    color: $color-white;
+}
