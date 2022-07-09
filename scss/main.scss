@@ -1,7 +1,9 @@
-@import "/config/reset";
-@import "/elements/base";
-@import "/elements/buttons";
-@import "/elements/hamburgers.";
-@import "/elements/headings";
-@import "/elements/navigation";
-@import "/settings/variables";
+@import "../config/reset";
+@import "../elements/buttons";
+@import "../elements/headings";
+@import "../elements/navigation";
+@import "../elements/base";
+//@import "mixin";
+
+@import "../settings/variables";
+@import "../elements/hamburgers"
