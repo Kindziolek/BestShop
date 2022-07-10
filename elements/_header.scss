@@ -1,0 +1,108 @@
+.header, .footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    background:  $color-white 0% 0%;
+    box-shadow: 0px 3px 6px #00000029;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1352px;
+        max-width: 80%;
+        height: 70px;
+    }
+
+    .container__footer {
+        width: 1352px;
+    }
+}
+
+.logo_text {
+    text-align: left;
+    line-height: 37;
+    font-size: 32px;
+    line-height: 37px;
+    font-family: $font-raleway;
+    font-weight: 300;
+    color: $color-primary;
+
+    .nav_list {
+        display: flex;
+        text-align: center;
+
+        .nav_link {
+            display: flex;
+            letter-spacing: 3.28px;
+            color:  $color-black;
+            font-size: 11px;
+            line-height: 15px;
+            font-family: $font-open-sans;
+            font-weight: bold;
+            color: $color-grey;
+            margin-left: 95px;
+            text-decoration: none;
+            height: 66px;
+            align-items: center;
+            border-bottom-color: $color-white;
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+        }
+
+        .nav_link:hover {
+            display: flex;
+            text-align: center;
+            font: normal normal bold 11px/15px $font-open-sans;
+            letter-spacing: 3.28px;
+            color:  $color-black;
+            border-bottom-color: rgb(8, 166, 228);
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+            height: 66px;
+        }
+
+    }
+}
+
+
+.footer_text {
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: $font-open-sans;
+    letter-spacing: 0px;
+    color: $color-grey;
+}
+
+.footer_section {
+    width: 1352px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    box-shadow: 0px -5px 40px #00000029;
+    margin-top: 59px;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_icon {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+}
+
+.twitter_icon {
+    background-image: url(/BestShop/assets/Twitter.svg);
+    margin-right: 20px;
+}
+
+.facebook_icon {
+    background-image: url(/BestShop/assets/Facebook.svg);
+}
