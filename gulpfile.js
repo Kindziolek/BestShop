@@ -24,7 +24,7 @@ function watcher(done) {
     server: "./" + entryPath,
   });
 
-  gulp.watch(entryPath + "/scss/**/*.scss", gulp.series(compileSass, reload));
+  gulp.watch(entryPath + "/(scss|elements|config|settings)/**/*.scss", gulp.series(compileSass, reload));
   gulp.watch(entryPath + "/*.html", gulp.series(reload));
 
   done();

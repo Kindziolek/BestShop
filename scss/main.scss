@@ -1,18 +1,14 @@
 @import "../config/reset";
 
 @import "../settings/variables";
+@import "../settings/mixins";
 @import "../elements/base";
 
-@import "../elements/header";
+
+
 @import "../elements/navigation";
+@import "../elements/header-and-footer";
 @import "../elements/hamburgers";
-
-
-@import "../elements/headings";
-
-
-//@import "mixin";
-
 
 @import "../elements/wellcome";
 @import "../elements/benefits";
