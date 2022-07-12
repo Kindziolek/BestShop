@@ -776,8 +776,7 @@ h2 {
   align-items: center;
   width: 100vw;
 }
-
-.headline_statistics {
+.section_statistics .headline_statistics {
   text-align: center;
   font-size: 36px;
   line-height: 42px;
@@ -787,46 +786,40 @@ h2 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
-.statistics_container {
+.section_statistics .statistics_container {
   display: flex;
   width: 823px;
   justify-content: space-between;
   margin-bottom: 121px;
 }
-
-.person_content {
+.section_statistics .person_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 116px;
   height: 140px;
 }
-
-.eye_content {
+.section_statistics .eye_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 176px;
   height: 167px;
 }
-
-.catalog_content {
+.section_statistics .catalog_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 163px;
   height: 168px;
 }
-
-.person_icon {
+.section_statistics .person_icon {
   width: 63px;
   height: 63px;
   background-color: rgb(251, 59, 100);
   border-radius: 50%;
 }
-
-.person_icon:before {
+.section_statistics .person_icon:before {
   display: block;
   background-image: url("../assets/Person.svg");
   width: 44px;
@@ -834,15 +827,13 @@ h2 {
   content: "";
   margin-left: 30px;
 }
-
-.eye_icon {
+.section_statistics .eye_icon {
   width: 63px;
   height: 63px;
   background-color: #08a6e4;
   border-radius: 50%;
 }
-
-.eye_icon:before {
+.section_statistics .eye_icon:before {
   display: block;
   background-image: url("../assets/Eye.svg");
   width: 65px;
@@ -851,15 +842,13 @@ h2 {
   margin-left: 20px;
   margin-top: 10px;
 }
-
-.catalog_icon {
+.section_statistics .catalog_icon {
   width: 63px;
   height: 63px;
   background-color: #55dfb4;
   border-radius: 50%;
 }
-
-.catalog_icon:before {
+.section_statistics .catalog_icon:before {
   display: block;
   background-image: url("../assets/Catalog.svg");
   width: 52px;
@@ -868,8 +857,7 @@ h2 {
   margin-left: 30px;
   margin-top: 5px;
 }
-
-.statistics_number {
+.section_statistics .statistics_number {
   text-align: center;
   font-weight: 800;
   font-size: 20px;
@@ -880,8 +868,7 @@ h2 {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-
-.text_statistics {
+.section_statistics .text_statistics {
   text-align: center;
   font-size: 17px;
   line-height: 20px;
