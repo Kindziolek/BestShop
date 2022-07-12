@@ -354,14 +354,14 @@ h2 {
   font-size: 2.25rem;
 }
 
-.header, .footer {
+.header {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
   background: #ffffff 0% 0%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
-.header .container, .footer .container {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -369,7 +369,7 @@ h2 {
   max-width: 80%;
   height: 70px;
 }
-.header .container__footer, .footer .container__footer {
+.header .container__footer {
   width: 1352px;
 }
 
@@ -398,6 +398,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
 .footer {
@@ -406,6 +407,13 @@ h2 {
   align-content: stretch;
   align-items: center;
   flex-direction: column;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1352px;
+  height: 70px;
 }
 
 .footer_icon {
@@ -416,12 +424,12 @@ h2 {
 }
 
 .twitter_icon {
-  background-image: url(/BestShop/assets/Twitter.svg);
+  background-image: url("../assets/Twitter.svg");
   margin-right: 20px;
 }
 
 .facebook_icon {
-  background-image: url(/BestShop/assets/Facebook.svg);
+  background-image: url("../assets/Facebook.svg");
 }
 
 .nav_list {
@@ -457,76 +465,6 @@ h2 {
   height: 66px;
 }
 
-.btn_wellcome {
-  background-origin: padding-box;
-  background-clip: padding-box;
-  background-color: rgba(7, 172, 230, 0.16);
-  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
-  border-radius: 35px;
-  width: 440px;
-  height: 67px;
-  border: none;
-  margin-top: 18px;
-  position: relative;
-}
-
-.btn_wellcome_text {
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0px;
-  color: #ffffff;
-}
-
-.btn {
-  position: relative;
-  bottom: -45px;
-  width: 150px;
-  height: 50px;
-  background-color: #EB476E;
-  border-radius: 23px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 50px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0px;
-  color: #ffffff;
-}
-
-.btn_basic {
-  background-color: #EB476E;
-}
-
-.btn_professional {
-  background-color: #07ACE6;
-}
-
-.btn_premium {
-  background-color: #55dfb4;
-}
-
-.btn_form {
-  background: #08a6e4;
-  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
-  border-radius: 35px;
-  border: 0;
-  width: 226px;
-  height: 57px;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 18px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0px;
-  color: #ffffff;
-  text-align: center;
-  align-self: flex-end;
-}
-
 .background_wellcome {
   position: absolute;
   background-position: bottom;
@@ -535,7 +473,7 @@ h2 {
 }
 
 .section_wellcome {
-  height: 842px;
+  height: 890px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -551,6 +489,7 @@ h2 {
   letter-spacing: 0px;
   color: #000000;
   margin-top: 130px;
+  background-position: bottom;
 }
 
 .text_wellcome {
@@ -624,7 +563,7 @@ h2 {
 .benefit_first_photo::after {
   display: block;
   position: absolute;
-  background-image: url("/BestShop/assets/Macbook.png");
+  background-image: url("../assets/Macbook.png");
   width: 386px;
   height: 219px;
   content: "";
@@ -647,7 +586,7 @@ h2 {
 .benefit_second_photo::after {
   display: block;
   position: absolute;
-  background-image: url("/BestShop/assets/iPhone.png");
+  background-image: url("../assets/iPhone.png");
   width: 426px;
   height: 328px;
   content: "";
@@ -669,7 +608,7 @@ h2 {
 .benefit_third_photo::after {
   display: block;
   position: absolute;
-  background-image: url("/BestShop/assets/Trumpet.png");
+  background-image: url("../assets/Trumpet.png");
   width: 296px;
   height: 208px;
   background-size: cover;
@@ -808,7 +747,7 @@ h2 {
 
 .person_icon:before {
   display: block;
-  background-image: url(/BestShop/assets/Person.svg);
+  background-image: url("../assets/Person.svg");
   width: 44px;
   height: 52px;
   content: "";
@@ -824,7 +763,7 @@ h2 {
 
 .eye_icon:before {
   display: block;
-  background-image: url("/BestShop/assets/Eye.svg");
+  background-image: url("../assets/Eye.svg");
   width: 65px;
   height: 37px;
   content: "";
@@ -841,7 +780,7 @@ h2 {
 
 .catalog_icon:before {
   display: block;
-  background-image: url("/BestShop/assets/Catalog.svg");
+  background-image: url("../assets/Catalog.svg");
   width: 52px;
   height: 48px;
   content: "";
@@ -1158,5 +1097,76 @@ h2 {
 .checkbox_box {
   display: flex;
   position: relative;
+}
+
+.btn_wellcome {
+  background-origin: padding-box;
+  background-clip: padding-box;
+  background-color: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
+  border-radius: 35px;
+  width: 440px;
+  height: 67px;
+  border: none;
+  margin-top: 18px;
+  position: relative;
+}
+
+.btn_wellcome_text {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.btn {
+  position: relative;
+  bottom: -45px;
+  width: 150px;
+  height: 50px;
+  background-color: #EB476E;
+  border-radius: 23px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 50px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.btn_basic {
+  background-color: #EB476E;
+}
+
+.btn_professional {
+  background-color: #07ACE6;
+}
+
+.btn_premium {
+  background-color: #55dfb4;
+}
+
+.btn_form {
+  background: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
+  border-radius: 35px;
+  border: 0;
+  width: 226px;
+  height: 57px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  align-self: flex-end;
 }
 /*# sourceMappingURL=main.css.map */

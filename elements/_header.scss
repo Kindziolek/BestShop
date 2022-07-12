@@ -1,4 +1,4 @@
-.header, .footer {
+.header {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
@@ -45,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 .footer {
@@ -53,7 +54,16 @@
     align-content: stretch;
     align-items: center;
     flex-direction: column;
+
+       .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1352px;
+        height: 70px;
+    }
 }
+
 
 .footer_icon {
     display: block;
@@ -63,10 +73,10 @@
 }
 
 .twitter_icon {
-    background-image: url(/BestShop/assets/Twitter.svg);
+    background-image: url("../assets/Twitter.svg");
     margin-right: 20px;
 }
 
 .facebook_icon {
-    background-image: url(/BestShop/assets/Facebook.svg);
+    background-image: url("../assets/Facebook.svg");
 }

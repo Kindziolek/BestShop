@@ -56,7 +56,7 @@
 
 .person_icon:before {
     display: block;
-    background-image: url(/BestShop/assets/Person.svg);
+    background-image: url("../assets/Person.svg");
     width: 44px;
     height: 52px;
     content: "";
@@ -72,7 +72,7 @@
 
 .eye_icon:before {
     display: block;
-    background-image: url("/BestShop/assets/Eye.svg");
+    background-image: url("../assets/Eye.svg");
     width: 65px;
     height: 37px;
     content: "";
@@ -89,7 +89,7 @@
 
 .catalog_icon:before {
     display: block;
-    background-image: url("/BestShop/assets/Catalog.svg");
+    background-image: url("../assets/Catalog.svg");
     width: 52px;
     height: 48px;
     content: "";

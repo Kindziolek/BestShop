@@ -60,7 +60,7 @@
 .benefit_first_photo::after {
     display: block;
     position: absolute;
-    background-image: url("/BestShop/assets/Macbook.png");
+    background-image: url("../assets/Macbook.png");
     width: 386px;
     height: 219px;
     content: "";
@@ -84,7 +84,7 @@
 .benefit_second_photo::after {
     display: block;
     position: absolute;
-    background-image: url("/BestShop/assets/iPhone.png");
+    background-image: url("../assets/iPhone.png");
     width: 426px;
     height: 328px;
     content: "";
@@ -106,7 +106,7 @@
 .benefit_third_photo::after {
     display: block;
     position: absolute;
-    background-image: url("/BestShop/assets/Trumpet.png");
+    background-image: url("../assets/Trumpet.png");
     width: 296px;
     height: 208px;
     background-size: cover;
