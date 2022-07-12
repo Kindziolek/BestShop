@@ -4,6 +4,11 @@
     align-items: center;
     width: 100vw;
 
+    @include mobile {
+
+    }
+    }
+
 
     .headline_statistics {
         text-align: center;
@@ -14,6 +19,12 @@
         color: $color-black;
         margin-top: 100px;
         margin-bottom: 100px;
+
+        @include mobile {
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 40px;
+        }
     }
     
     .statistics_container {
@@ -21,6 +32,11 @@
         width: 823px;
         justify-content: space-between;
         margin-bottom: 121px;
+
+        @include mobile {
+            align-items: center;
+            flex-direction: column;
+        }
     }
 
 
@@ -38,6 +54,11 @@
         align-items: center;
         width: 176px;
         height: 167px;
+
+        @include mobile {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
     }
     
     .catalog_content {
@@ -119,4 +140,4 @@
         letter-spacing: 0px;
         color: $color-grey;
     }
-}
+

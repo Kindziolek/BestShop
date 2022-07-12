@@ -546,14 +546,18 @@ h2 {
 }
 
 .section_wellcome {
-  height: 890px;
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
-
-.headline_wellcome {
+@media (max-width: 792px) {
+  .section_wellcome {
+    height: calc(100vh - 70px);
+  }
+}
+.section_wellcome .headline_wellcome {
   text-align: center;
   font-stretch: normal;
   font-size: 49px;
@@ -564,8 +568,14 @@ h2 {
   margin-top: 130px;
   background-position: bottom;
 }
-
-.text_wellcome {
+@media (max-width: 792px) {
+  .section_wellcome .headline_wellcome {
+    margin-top: 100px;
+    font-size: 35px;
+    line-height: 41px;
+  }
+}
+.section_wellcome .text_wellcome {
   text-align: center;
   font-size: 16px;
   line-height: 22px;
@@ -574,6 +584,12 @@ h2 {
   color: #000000;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media (max-width: 792px) {
+  .section_wellcome .text_wellcome {
+    max-width: 80%;
+    padding: 15px;
+  }
 }
 
 .section_benefits {
@@ -776,7 +792,7 @@ h2 {
   align-items: center;
   width: 100vw;
 }
-.section_statistics .headline_statistics {
+.headline_statistics {
   text-align: center;
   font-size: 36px;
   line-height: 42px;
@@ -786,40 +802,65 @@ h2 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.section_statistics .statistics_container {
+@media (max-width: 792px) {
+  .headline_statistics {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+}
+
+.statistics_container {
   display: flex;
   width: 823px;
   justify-content: space-between;
   margin-bottom: 121px;
 }
-.section_statistics .person_content {
+@media (max-width: 792px) {
+  .statistics_container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.person_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 116px;
   height: 140px;
 }
-.section_statistics .eye_content {
+
+.eye_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 176px;
   height: 167px;
 }
-.section_statistics .catalog_content {
+@media (max-width: 792px) {
+  .eye_content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.catalog_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 163px;
   height: 168px;
 }
-.section_statistics .person_icon {
+
+.person_icon {
   width: 63px;
   height: 63px;
   background-color: rgb(251, 59, 100);
   border-radius: 50%;
 }
-.section_statistics .person_icon:before {
+
+.person_icon:before {
   display: block;
   background-image: url("../assets/Person.svg");
   width: 44px;
@@ -827,13 +868,15 @@ h2 {
   content: "";
   margin-left: 30px;
 }
-.section_statistics .eye_icon {
+
+.eye_icon {
   width: 63px;
   height: 63px;
   background-color: #08a6e4;
   border-radius: 50%;
 }
-.section_statistics .eye_icon:before {
+
+.eye_icon:before {
   display: block;
   background-image: url("../assets/Eye.svg");
   width: 65px;
@@ -842,13 +885,15 @@ h2 {
   margin-left: 20px;
   margin-top: 10px;
 }
-.section_statistics .catalog_icon {
+
+.catalog_icon {
   width: 63px;
   height: 63px;
   background-color: #55dfb4;
   border-radius: 50%;
 }
-.section_statistics .catalog_icon:before {
+
+.catalog_icon:before {
   display: block;
   background-image: url("../assets/Catalog.svg");
   width: 52px;
@@ -857,7 +902,8 @@ h2 {
   margin-left: 30px;
   margin-top: 5px;
 }
-.section_statistics .statistics_number {
+
+.statistics_number {
   text-align: center;
   font-weight: 800;
   font-size: 20px;
@@ -868,7 +914,8 @@ h2 {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.section_statistics .text_statistics {
+
+.text_statistics {
   text-align: center;
   font-size: 17px;
   line-height: 20px;
@@ -1171,8 +1218,7 @@ h2 {
   margin-top: 18px;
   position: relative;
 }
-
-.btn_wellcome_text {
+.btn_wellcome .btn_wellcome_text {
   text-decoration: none;
   text-align: center;
   font-weight: bold;
@@ -1182,6 +1228,11 @@ h2 {
   letter-spacing: 0px;
   color: #ffffff;
   margin-bottom: 50px;
+}
+@media (max-width: 792px) {
+  .btn_wellcome {
+    max-width: 80vw;
+  }
 }
 
 .btn {
