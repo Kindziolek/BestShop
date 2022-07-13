@@ -19,6 +19,7 @@
         margin-top: 37px;
 
         @include mobile {
+            width: 100vw;
             height: 370px;
             max-width: 80%;
         }
@@ -35,6 +36,11 @@
     border: 1px solid $color-border;
     border-radius: 5px;
     margin-top: 37px;
+
+    @include mobile {
+        width: 327px;
+    height: 935px;
+    }
 }
 
 .benefits_box:last-of-type {
@@ -52,6 +58,12 @@
     justify-content: space-between;
     width: 1124px;
     margin-bottom: 105px;
+
+    @include mobile {
+        width: 100vw;
+        max-width: 80%;
+        flex-direction: column;
+    }
 }
 
 .benefits_content {
@@ -64,7 +76,7 @@
 
     @include mobile {
         justify-content: flex-end;
-
+        margin-left: 25px;
     }
 }
 
@@ -150,6 +162,11 @@
     margin-top: 38px;
     border: 1px solid $color-border;
     border-radius: 5px;
+
+@include mobile {
+    width: 314px;
+    height: 195px;
+}
 }
 
 .benefit_third_photo::after {
@@ -162,6 +179,11 @@
     content: "";
     top: 98px;
     left: 62px;
+
+    @include mobile {
+        width: 296px;
+        height: 208px;
+    }
 }
 
 .benefit_firts {
@@ -169,7 +191,8 @@
     flex-direction: row;
     width: 1124px;
     justify-content: space-between;
-}
+    }
+
 
 .benefit_second {
     display: flex;
