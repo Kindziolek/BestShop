@@ -64,6 +64,7 @@
 
     @include mobile {
         justify-content: flex-end;
+
     }
 }
 
@@ -78,6 +79,7 @@
     top: 51px;
 
     @include mobile {
+        
         width: 100px;
         height: 100px;
         border-radius: 41px;
@@ -115,6 +117,12 @@
     position: relative;
     left: 70px;
     top: 10px;
+
+    @include mobile {
+        width: 132px;
+        height: 132px;
+
+    }
 }
 
 .benefit_second_photo::after {
@@ -127,6 +135,11 @@
     background-size: cover;
     left: 3px;
     top: 15px;
+
+    @include mobile {
+        width: 175px;
+        height: 135px;
+    }
 }
 
 .benefit_third_photo {
@@ -163,6 +176,10 @@
     flex-direction: row-reverse;
     width: 1124px;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -216,6 +233,9 @@
     @include mobile {
         font-size: 14px;
         line-height: 19px;
+        width: 100vw;
+        max-width: 70%;
+        margin-bottom: 30px;
     }
 }
 

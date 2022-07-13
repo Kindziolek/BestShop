@@ -711,6 +711,12 @@ h2 {
   left: 70px;
   top: 10px;
 }
+@media (max-width: 792px) {
+  .benefit_second_photo {
+    width: 132px;
+    height: 132px;
+  }
+}
 
 .benefit_second_photo::after {
   display: block;
@@ -722,6 +728,12 @@ h2 {
   background-size: cover;
   left: 3px;
   top: 15px;
+}
+@media (max-width: 792px) {
+  .benefit_second_photo::after {
+    width: 175px;
+    height: 135px;
+  }
 }
 
 .benefit_third_photo {
@@ -758,6 +770,11 @@ h2 {
   flex-direction: row-reverse;
   width: 1124px;
   justify-content: space-between;
+}
+@media (max-width: 792px) {
+  .benefit_second {
+    flex-direction: column-reverse;
+  }
 }
 
 .headline_benefits {
@@ -811,6 +828,9 @@ h2 {
   .text_benefits {
     font-size: 14px;
     line-height: 19px;
+    width: 100vw;
+    max-width: 70%;
+    margin-bottom: 30px;
   }
 }
 
