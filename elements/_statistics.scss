@@ -3,11 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-
-    @include mobile {
-
-    }
-    }
+}
 
 
     .headline_statistics {
@@ -23,6 +19,7 @@
         @include mobile {
             font-size: 30px;
             line-height: 35px;
+            margin-top: 40px;
             margin-bottom: 40px;
             max-width: 80%;
             padding: 10px;
@@ -38,6 +35,7 @@
         @include mobile {
             align-items: center;
             flex-direction: column;
+            margin-bottom: 30px;
         }
     }
 
