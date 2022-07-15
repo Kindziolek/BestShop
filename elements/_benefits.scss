@@ -38,8 +38,10 @@
     margin-top: 37px;
 
     @include mobile {
-        width: 327px;
-    height: 935px;
+        width: 100%;
+        max-width: 80%;
+        height: 935px;
+        align-items: center;
     }
 }
 
@@ -61,7 +63,7 @@
 
     @include mobile {
         width: 100vw;
-        max-width: 80%;
+        height: 500px;;
         flex-direction: column;
     }
 }
@@ -77,6 +79,7 @@
     @include mobile {
         justify-content: flex-end;
         margin-left: 25px;
+        width: 100vw;
     }
 }
 
@@ -133,7 +136,7 @@
     @include mobile {
         width: 132px;
         height: 132px;
-
+        left: 50%;
     }
 }
 

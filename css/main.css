@@ -632,8 +632,10 @@ h2 {
 }
 @media (max-width: 792px) {
   .benefits_box_small {
-    width: 327px;
+    width: 100%;
+    max-width: 80%;
     height: 935px;
+    align-items: center;
   }
 }
 
@@ -656,7 +658,7 @@ h2 {
 @media (max-width: 792px) {
   .benefits_box_duo {
     width: 100vw;
-    max-width: 80%;
+    height: 500px;
     flex-direction: column;
   }
 }
@@ -673,6 +675,7 @@ h2 {
   .benefits_content {
     justify-content: flex-end;
     margin-left: 25px;
+    width: 100vw;
   }
 }
 
@@ -730,6 +733,7 @@ h2 {
   .benefit_second_photo {
     width: 132px;
     height: 132px;
+    left: 50%;
   }
 }
 
