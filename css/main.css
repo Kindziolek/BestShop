@@ -1065,6 +1065,12 @@ h2 {
   align-items: center;
   margin-top: 50px;
 }
+@media (max-width: 792px) {
+  .pricing_container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 
 .pricing_box {
   background-color: #ffffff;
@@ -1076,6 +1082,24 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 792px) {
+  .pricing_box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vh;
+    max-width: 80%;
+    height: 251px;
+    margin-top: 60px;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 792px) {
+  .pakiet_box {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .pricing_basic {
@@ -1089,6 +1113,11 @@ h2 {
   width: 405px;
   height: 500px;
   color: #07ACE6;
+}
+@media (max-width: 792px) {
+  .pricing_professional {
+    max-width: 95%;
+  }
 }
 
 .pricing_premium {
@@ -1133,6 +1162,11 @@ h2 {
 .pricing_list {
   margin-top: 50px;
 }
+@media (max-width: 792px) {
+  .pricing_list {
+    margin-top: 15px;
+  }
+}
 
 .pricing_element {
   text-align: center;
@@ -1141,6 +1175,11 @@ h2 {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0px;
   color: #000000;
+}
+@media (max-width: 792px) {
+  .pricing_element {
+    text-align: left;
+  }
 }
 
 .pricing_yes::before {
@@ -1364,6 +1403,11 @@ h2 {
 
 .btn_basic {
   background-color: #EB476E;
+}
+@media (max-width: 792px) {
+  .btn_basic {
+    bottom: -5px;
+  }
 }
 
 .btn_professional {

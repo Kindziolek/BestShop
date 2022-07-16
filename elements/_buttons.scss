@@ -48,6 +48,10 @@
 
 .btn_basic {
     background-color: $color-backgroud-red;
+
+    @include mobile {
+        bottom: -5px;
+    }
 }
 
 .btn_professional {

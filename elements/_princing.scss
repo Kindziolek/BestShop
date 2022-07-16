@@ -28,6 +28,11 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
+
+    @include mobile {
+        flex-direction: column;
+        margin-top: 0;
+    }
 }
 
 .pricing_box {
@@ -40,6 +45,23 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    @include mobile {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vh;
+        max-width: 80%;
+        height: 251px;
+        margin-top: 60px;
+        justify-content: space-evenly;
+    }
+}
+
+.pakiet_box {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .pricing_basic {
@@ -54,6 +76,10 @@
     width: 405px;
     height: 500px;
     color: $color-border-blue;
+
+    @include mobile {
+        max-width: 95%;
+    }
 }
 
 .pricing_premium {
@@ -97,6 +123,10 @@
 
 .pricing_list {
     margin-top: 50px;
+
+    @include mobile {
+        margin-top: 15px;
+    }
 }
 
 .pricing_element {
@@ -106,6 +136,10 @@
     font-family: $font-open-sans;
     letter-spacing: 0px;
     color: $color-black;
+
+    @include mobile {
+        text-align: left;
+    }
 }
 
 .pricing_yes::before {
