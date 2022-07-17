@@ -1206,19 +1206,29 @@ h2 {
   justify-content: center;
   margin-top: 155px;
   background-color: #ffffff;
-  width: 100vw;
+  width: 100%;
 }
 .section_contact .contant_container {
   display: flex;
-  width: 100vw;
   max-width: 50%;
   flex-direction: row;
   justify-content: space-around;
+}
+@media (max-width: 792px) {
+  .section_contact .contant_container {
+    flex-direction: column;
+    max-width: 90%;
+  }
 }
 .section_contact .contant_container .contact_info {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
+}
+@media (max-width: 792px) {
+  .section_contact .contant_container .contact_info {
+    margin-right: 0;
+  }
 }
 .section_contact .contant_container .contact_info .headline_questions {
   text-align: left;
@@ -1238,11 +1248,22 @@ h2 {
   margin-top: 22px;
   margin-bottom: 40px;
 }
+@media (max-width: 792px) {
+  .section_contact .contant_container .contact_info .questions_text {
+    margin-top: 5px;
+  }
+}
 
 .contant_box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 792px) {
+  .contant_box {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
 }
 .contant_box .contact_detalis {
   display: inline-flex;

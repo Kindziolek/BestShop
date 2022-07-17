@@ -3,19 +3,28 @@
     justify-content: center;
     margin-top: 155px;
     background-color: $color-white;
-    width: 100vw;
+    width: 100%;
 
     .contant_container {
         display: flex;
-        width: 100vw;
         max-width: 50%;
         flex-direction: row;
         justify-content: space-around;
+
+        @include mobile {
+            flex-direction: column;
+            max-width: 90%;
+        }
+    
 
         .contact_info {
             display: flex;
             flex-direction: column;
             margin-right: 40px;
+
+            @include mobile {
+                margin-right: 0;
+            }
 
             .headline_questions {
                 text-align: left;
@@ -35,6 +44,11 @@
                 color: $color-black;
                 margin-top: 22px;
                 margin-bottom: 40px;
+
+                @include mobile {
+                    margin-top: 5px;
+                    
+                }
             }
             
         }
@@ -45,6 +59,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+        margin-bottom: 35px;
+
+    }
+
 
     .contact_detalis {
         display: inline-flex;
