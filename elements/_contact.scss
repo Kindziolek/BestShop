@@ -4,50 +4,60 @@
     margin-top: 155px;
     background-color: $color-white;
     width: 100vw;
-}
 
+    .contant_container {
+        display: flex;
+        width: 100vw;
+        max-width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
 
-.contant_container {
-    display: flex;
-    width: 100vw;
-    max-width: 50%;
-    flex-direction: row;
-    justify-content: space-around;
-}
+        .contact_info {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
 
-.contact_info {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
-}
-
-.headline_questions {
-    text-align: left;
-    font-size: 49px;
-    line-height: 57px;
-    font-family: $font-raleway;
-    letter-spacing: 0px;
-    color: $color-black;
-}
-
-.questions_text {
-    text-align: left;
-    font-size: 16px;
-    line-height: 22px;
-    font-family: $font-open-sans;
-    letter-spacing: 0px;
-    color: $color-black;
-    margin-top: 22px;
-    margin-bottom: 40px;
+            .headline_questions {
+                text-align: left;
+                font-size: 49px;
+                line-height: 57px;
+                font-family: $font-raleway;
+                letter-spacing: 0px;
+                color: $color-black;
+            }
+            
+            .questions_text {
+                text-align: left;
+                font-size: 16px;
+                line-height: 22px;
+                font-family: $font-open-sans;
+                letter-spacing: 0px;
+                color: $color-black;
+                margin-top: 22px;
+                margin-bottom: 40px;
+            }
+            
+        }
+    }
 }
 
 .contant_box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    .contact_detalis {
+        display: inline-flex;
+        text-align: left;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $font-open-sans;
+        letter-spacing: 0px;
+        color: $color-grey;
+        align-items: center;
+    }
 }
-
-
 
 .email_icon::before {
     content: "";
@@ -73,19 +83,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    .form_text {
+        text-align: left;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 15px;
+        font-family: $font-open-sans;
+        letter-spacing: 3.28px;
+        color: $color-primary;
+    }
 }
 
-.contact_detalis {
-    display: inline-flex;
-    text-align: left;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    font-family: $font-open-sans;
-    letter-spacing: 0px;
-    color: $color-grey;
-    align-items: center;
-}
+
 
 .contact_form {
     display: flex;
@@ -98,15 +108,7 @@
     width: 440px;
 }
 
-.form_text {
-    text-align: left;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 15px;
-    font-family: $font-open-sans;
-    letter-spacing: 3.28px;
-    color: $color-primary;
-}
+
 
 .form_text:hover {
     box-shadow: 0px 1px 6px #FF00004D;

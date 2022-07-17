@@ -1208,22 +1208,19 @@ h2 {
   background-color: #ffffff;
   width: 100vw;
 }
-
-.contant_container {
+.section_contact .contant_container {
   display: flex;
   width: 100vw;
   max-width: 50%;
   flex-direction: row;
   justify-content: space-around;
 }
-
-.contact_info {
+.section_contact .contant_container .contact_info {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
 }
-
-.headline_questions {
+.section_contact .contant_container .contact_info .headline_questions {
   text-align: left;
   font-size: 49px;
   line-height: 57px;
@@ -1231,8 +1228,7 @@ h2 {
   letter-spacing: 0px;
   color: #000000;
 }
-
-.questions_text {
+.section_contact .contant_container .contact_info .questions_text {
   text-align: left;
   font-size: 16px;
   line-height: 22px;
@@ -1247,6 +1243,17 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.contant_box .contact_detalis {
+  display: inline-flex;
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #a5a5a5;
+  align-items: center;
 }
 
 .email_icon::before {
@@ -1274,17 +1281,14 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
 }
-
-.contact_detalis {
-  display: inline-flex;
+.contact_form_box .form_text {
   text-align: left;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: 0px;
-  color: #a5a5a5;
-  align-items: center;
+  letter-spacing: 3.28px;
+  color: #08a6e4;
 }
 
 .contact_form {
@@ -1296,16 +1300,6 @@ h2 {
   border: none;
   border-bottom: 1px solid #95989A;
   width: 440px;
-}
-
-.form_text {
-  text-align: left;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 15px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 3.28px;
-  color: #08a6e4;
 }
 
 .form_text:hover {
