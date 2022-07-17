@@ -627,7 +627,7 @@ h2 {
   display: flex;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
-  margin-top: 37px;
+  margin-top: 50px;
 }
 @media (max-width: 792px) {
   .section_benefits .benefits_box {
@@ -746,7 +746,7 @@ h2 {
   justify-content: space-between;
   width: 100%;
   max-width: 1124px;
-  margin-bottom: 105px;
+  margin-bottom: 50px;
 }
 @media (max-width: 792px) {
   .benefits_box_duo {
