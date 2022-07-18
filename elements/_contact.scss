@@ -1,0 +1,180 @@
+.section_contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 155px;
+    background-color: $color-white;
+    width: 100%;
+
+    .contant_container {
+        display: flex;
+        max-width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+
+        @include mobile {
+            flex-direction: column;
+            max-width: 90%;
+        }
+    
+
+        .contact_info {
+            display: flex;
+            flex-direction: column;
+            margin-right: 40px;
+
+            @include mobile {
+                margin-right: 0;
+            }
+
+            .headline_questions {
+                text-align: left;
+                font-size: 49px;
+                line-height: 57px;
+                font-family: $font-raleway;
+                letter-spacing: 0px;
+                color: $color-black;
+            }
+            
+            .questions_text {
+                text-align: left;
+                font-size: 16px;
+                line-height: 22px;
+                font-family: $font-open-sans;
+                letter-spacing: 0px;
+                color: $color-black;
+                margin-top: 22px;
+                margin-bottom: 40px;
+
+                @include mobile {
+                    margin-top: 5px;
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+.contant_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+        margin-bottom: 35px;
+
+    }
+
+
+    .contact_detalis {
+        display: inline-flex;
+        text-align: left;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $font-open-sans;
+        letter-spacing: 0px;
+        color: $color-grey;
+        align-items: center;
+    }
+}
+
+.email_icon::before {
+    content: "";
+    background-image: url("/assets/Mail\ Icon.svg");
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.phone_icon::before {
+    content: "";
+    background-image: url(/assets/Phone\ Icon.svg);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact_form_box {
+    width: 440px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .form_text {
+        text-align: left;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 15px;
+        font-family: $font-open-sans;
+        letter-spacing: 3.28px;
+        color: $color-primary;
+    }
+}
+
+
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_contact {  
+    border: none;
+    border-bottom: 1px solid #95989A;
+    width: 440px;
+}
+
+
+
+.form_text:hover {
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+}
+
+.checkbox_icon {
+    display: flex;
+    background-position: center;
+    background-size: 50%;
+    background-color: $color-white;
+    margin-right: 10px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    height: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+
+.checkbox_form {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.checkbox_form:checked + .checkbox_icon {
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.checkbox_text {
+    text-align: left;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: $font-open-sans;
+    letter-spacing: 0px;
+    color: #707070;
+}
+
+.checkbox_box {
+    display: flex;
+    position: relative;
+}

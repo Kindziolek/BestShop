@@ -1,0 +1,143 @@
+.section_statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+
+    .headline_statistics {
+        text-align: center;
+        font-size: 36px;
+        line-height: 42px;
+        font-family: $font-raleway;
+        letter-spacing: 0px;
+        color: $color-black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        @include mobile {
+            font-size: 30px;
+            line-height: 35px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            max-width: 80%;
+            padding: 10px;
+        }
+    }
+    
+    .statistics_container {
+        display: flex;
+        width: 823px;
+        justify-content: space-between;
+        margin-bottom: 121px;
+
+        @include mobile {
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .person_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 116px;
+        height: 140px;
+    }
+
+    .eye_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 176px;
+        height: 167px;
+
+        @include mobile {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    
+    .catalog_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 163px;
+        height: 168px;
+    }
+    
+    .person_icon {
+        width: 63px;
+        height: 63px;
+        background-color: rgb(251, 59, 100);
+        border-radius: 50%;
+    }
+    
+    .person_icon:before {
+        display: block;
+        background-image: url("../assets/Person.svg");
+        width: 44px;
+        height: 52px;
+        content: "";
+        margin-left: 30px;
+    }
+    
+    .eye_icon {
+        width: 63px;
+        height: 63px;
+        background-color: $color-primary;
+        border-radius: 50%;
+    }
+    
+    .eye_icon:before {
+        display: block;
+        background-image: url("../assets/Eye.svg");
+        width: 65px;
+        height: 37px;
+        content: "";
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .catalog_icon {
+        width: 63px;
+        height: 63px;
+        background-color: $color-green;
+        border-radius: 50%;
+    }
+    
+    .catalog_icon:before {
+        display: block;
+        background-image: url("../assets/Catalog.svg");
+        width: 52px;
+        height: 48px;
+        content: "";
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    
+    
+    .statistics_number {
+        text-align: center;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: $font-raleway;
+        letter-spacing: 5.96px;
+        color: $color-black;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .text_statistics {
+        text-align: center;
+        font-size: 17px;
+        line-height: 20px;
+        font-family: $font-raleway;
+        letter-spacing: 0px;
+        color: $color-grey;
+    }
+
